@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vishnu — Computer Engineering Portfolio</title>
+  <meta name="description" content="Portfolio of Vishnu, a Computer Engineering undergraduate: projects, skills, resume, and contact." />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="styles.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#hero" aria-label="Home">
+        <span class="logo" aria-hidden="true">⌁</span>
+        <span>Vishnu</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navmenu">
+        <span class="sr-only">Toggle menu</span>
+        ☰
+      </button>
+
+      <ul id="navmenu" class="navmenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">🌓</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi, I’m <span class="accent">Vishnu</span>.</h1>
+          <p class="lead">
+            Computer Engineering undergraduate focusing on <strong>embedded systems</strong>, <strong>digital design</strong>, and <strong>systems programming</strong>.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="assets/YourName_Resume.pdf" target="_blank" rel="noopener">View Résumé</a>
+          </div>
+          <ul class="social">
+            <!-- Replace with your links -->
+            <li><a href="https://github.com/yourhandle" target="_blank" rel="noopener" aria-label="GitHub">GitHub ↗</a></li>
+            <li><a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn ↗</a></li>
+            <li><a href="mailto:you@university.edu" aria-label="Email">Email ✉</a></li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <img src="assets/headshot.jpg" alt="Headshot of Vishnu" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container split">
+        <div>
+          <h2>About</h2>
+          <p>
+            I’m a Computer Engineering undergraduate at <em>University of Michigan</em>. I enjoy building from the bare metal up:
+            microcontrollers, FPGAs, C/C++, and bringing hardware and software together. I’m currently exploring
+            RTOS design, RISC-V, and low-power IoT.
+          </p>
+          <p>
+            Outside class, I contribute to open-source, lead lab tutoring, and compete in hardware hackathons.
+          </p>
+          <div class="highlights">
+            <div class="card">
+              <h3>Interests</h3>
+              <ul>
+                <li>Embedded & RTOS</li>
+                <li>Digital Logic / FPGA</li>
+                <li>Computer Architecture</li>
+                <li>Systems Programming</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Education</h3>
+              <p><strong>B.S. in Computer Engineering</strong><br/>University of Michigan, 2023–2027 (expected)</p>
+              <p>GPA: 3.8/4.0 • Dean’s List</p>
+            </div>
+          </div>
+        </div>
+        <aside class="stats">
+          <div class="kpi"><span class="num" data-count="12">0</span><span>projects</span></div>
+          <div class="kpi"><span class="num" data-count="4">0</span><span>internships</span></div>
+          <div class="kpi"><span class="num" data-count="8">0</span><span>hardware boards</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skill-grid">
+          <div class="skill-card">
+            <h3>Languages</h3>
+            <ul class="tags">
+              <li>C</li><li>C++</li><li>Python</li><li>Rust</li><li>Verilog</li><li>VHDL</li><li>Bash</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Platforms</h3>
+            <ul class="tags">
+              <li>ARM Cortex-M</li><li>STM32</li><li>ESP32</li><li>AVR</li><li>Raspberry Pi</li><li>Arduino</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Tools</h3>
+            <ul class="tags">
+              <li>Git</li><li>KiCad</li><li>Quartus/Vivado</li><li>FreeRTOS</li><li>Zephyr</li><li>GDB</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3>Coursework</h3>
+            <ul class="tags">
+              <li>Computer Architecture</li><li>Operating Systems</li><li>Signals & Systems</li><li>VLSI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <img src="assets/projects/rtos-watch.jpg" alt="Photo of a custom RTOS smartwatch" loading="lazy" />
+            <div class="project-body">
+              <h3>RTOS Wearable</h3>
+              <p>Low-power smartwatch built on an STM32L4 with FreeRTOS, custom PCB, and BLE notifications.</p>
+              <ul class="tags"><li>C</li><li>FreeRTOS</li><li>BLE</li><li>KiCad</li></ul>
+              <div class="links">
+                <a href="https://github.com/yourhandle/rtos-watch" target="_blank" rel="noopener">Code ↗</a>
+                <a href="#" aria-disabled="true">Demo (soon)</a>
+              </div>
+            </div>
+          </article>
+          <!-- Project 2 -->
+          <article class="project-card">
+            <img src="assets/projects/riscv-core.png" alt="Block diagram of a simple RISC-V core" loading="lazy" />
+            <div class="project-body">
+              <h3>RISC-V Core (RV32I)</h3>
+              <p>Single-cycle CPU in Verilog with basic toolchain and tests on a DE10-Lite FPGA board.</p>
+              <ul class="tags"><li>Verilog</li><li>FPGA</li><li>RISC-V</li></ul>
+              <div class="links">
+                <a href="https://github.com/yourhandle/rv32i-core" target="_blank" rel="noopener">Code ↗</a>
+                <a href="assets/docs/rv32i-report.pdf" target="_blank" rel="noopener">Report ↗</a>
+              </div>
+            </div>
+          </article>
+          <!-- Project 3 -->
+          <article class="project-card">
+            <img src="assets/projects/iot-sensor.jpg" alt="IoT sensor node on perfboard" loading="lazy" />
+            <div class="project-body">
+              <h3>IoT Sensor Node</h3>
+              <p>ESP32-based air-quality node with deep sleep, MQTT, and Grafana dashboard.</p>
+              <ul class="tags"><li>ESP32</li><li>MQTT</li><li>Python</li></ul>
+              <div class="links">
+                <a href="https://github.com/yourhandle/iot-sensor" target="_blank" rel="noopener">Code ↗</a>
+                <a href="https://yourdemo.example.com" target="_blank" rel="noopener">Live ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Add more projects by duplicating cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <article class="titem">
+            <h3>Embedded Systems Intern — <span class="muted">Acme Robotics</span></h3>
+            <p class="tmeta">May–Aug 2025 • San Jose, CA</p>
+            <ul>
+              <li>Optimized motor-control loop on ARM M4F, reducing jitter 38% via DMA + timer sync.</li>
+              <li>Wrote production C drivers for SPI sensors; hardened with unit tests and CI.</li>
+            </ul>
+          </article>
+          <article class="titem">
+            <h3>Lab Teaching Assistant — <span class="muted">University of Michigan</span></h3>
+            <p class="tmeta">2024–Present • Digital Systems Lab</p>
+            <ul>
+              <li>Mentored 60+ students on HDL debugging, timing closure, and simulation practices.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <p>Want to collaborate or chat about embedded systems? Reach out:</p>
+        <form class="contact" action="https://formspree.io/f/yourformid" method="POST">
+          <!-- If you don’t want Formspree, replace action with `mailto:you@university.edu` and remove name inputs -->
+          <label>
+            <span class="lbl">Name</span>
+            <input name="name" type="text" autocomplete="name" required />
+          </label>
+          <label>
+            <span class="lbl">Email</span>
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            <span class="lbl">Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Vishnu · Built with HTML/CSS/JS · <a href="assets/YourName_Resume.pdf" target="_blank" rel="noopener">Résumé</a></p>
+    </div>
+  </footer>
+</body>
+</html>
